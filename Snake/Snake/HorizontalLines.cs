@@ -10,10 +10,10 @@ namespace Snake
     {
         List<Point> pList;
 
-        public HorizontalLines(int xleft, int xright, int y, char sym)
+        public HorizontalLines(int x, int ytop, int ybot, char sym)
         {
             pList = new List<Point>();
-            for (int x = xleft; x <= xright; x++)
+            for (int y = ytop; y <= ybot; y++)
             {
                 Point p = new Point(x, y, sym);
                 pList.Add(p);
